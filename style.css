@@ -8,15 +8,13 @@
      box-sizing: border-box;  /*to make all childs elements inside or same my border*/
      scroll-behavior: smooth;
 }
-body{
-    margin-top: 100px;
-}
+
 
 
 header{
    
-    height: 100px;
-    background-color: rgb(223, 231, 235);
+    height: 150px;
+    background-color: rgb(238, 242, 243);
     width: 100%;
     position: fixed; /* i set fixed heder by fixed + z-index 999*/
     z-index: 999;
@@ -24,18 +22,21 @@ header{
     justify-content: space-between; /*to aplay spaces between headers childs elements (nav+logo)*/
     align-items: center;
     padding: 10px 200px ;
-    
-    
 }
-.logo{
+
+.logo {
     text-decoration: none;
-    color: rgb(145, 145, 164);
+    color: rgb(83, 83, 111);
     text-transform: uppercase; /* kapital letters or logo*/
     font-weight: 700;
     font-size: 1.8em; /*set relative size till mobile*/
     }
-
-
+.logo1 {
+    
+    width: 80px;
+    height: 80px;
+    opacity: 0.3;
+}
 
 .nav a{
     color:rgb(143, 143, 158);
@@ -106,10 +107,88 @@ section{
 }
 .social-icon a{
     color: #3160c4;
-    font-size: 2em;
+    font-size: 2.1em;
     padding-right: 30px;
+    padding-left: 10px;
+    
 
 }
+
+/*  Bok Bord , grid */
+
+.wrapper {
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  }
+  .wrapper > * {
+    padding: 1em;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contacts {
+    background: #4b5195;
+    color: #fff;
+  }
+  
+  .form {
+    background: #fff;
+  }
+  
+  form label {
+    display: block;
+  }
+  
+  button,
+  input,
+  textarea {
+    padding: 1em;
+  }
+  
+  button {
+    background: lightgrey;
+    width: 100%;
+    border: 0;
+  }
+  button:hover, button:focus {
+    background: gold;
+    outline: 0;
+  }
+  
+  .contain {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+  }
+  @media (min-width: 600px) {
+    .contain {
+      padding: 0;
+    }
+  }
+  
+  h3,
+  ul {
+    margin: 0;
+  }
+  
+  h3 {
+    margin-bottom: 1rem;
+  }
+  
+  input:focus,
+  textarea:focus {
+    outline: 3px solid gold;
+  }
+  
+  input,
+  textarea,
+  button {
+    width: 100%;
+    border: 1px solid #000;
+  }
 
 
 /*   Meny style as cards ---------------------------------------*/
@@ -170,30 +249,33 @@ margin-bottom: 30px;
 }
 
 
-/*footer*/
+/*footer , black background with white text coclor, 
+the address& telephon+ socialmedia are GRID in class container,
+ box are element inside grid box container*/
 
-.footer {
-    background-color: #000016;
-    color: #fff;
-    padding: 2em;
-    display: flex;
-    justify-content: space-around;
+footer{
+    background-color: #010118;
+    padding-top: 20px;
+}
+.container {
+    background-color: #010118;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-auto-rows: minmax(200px,auto) ;
+    gap: 30px;
+    
+    
+
+}
+/*set spaces between columns*/
+.box{
+    text-align: center;
+    color: #fafcfc;
+   
 }
 
-.footer-title {
-    font-size: 1.3em;
-    font-weight: 600;
-}
 
-.footer-title span {
-    color: #3a6cf4;
-
-}
-
-.footer .social-icon {
-    font-size: 1.3em;
-    padding: 0 12px 0 0;
-}
 
 @media (max-width:1023px){
     header{
