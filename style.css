@@ -1,0 +1,197 @@
+/* copy the font from google*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+     font-family: 'Poppins', sans-serif;
+     margin:0;
+     padding: 0;
+     box-sizing: border-box;  /*to make all childs elements inside or same my border*/
+     scroll-behavior: smooth;
+}
+body{
+    margin-top: 100px;
+}
+
+
+header{
+   
+    height: 100px;
+    background-color: rgb(223, 231, 235);
+    width: 100%;
+    position: fixed; /* i set fixed heder by fixed + z-index 999*/
+    z-index: 999;
+    display: flex; /*to set flex header*/
+    justify-content: space-between; /*to aplay spaces between headers childs elements (nav+logo)*/
+    align-items: center;
+    padding: 10px 200px ;
+    
+    
+}
+.logo{
+    text-decoration: none;
+    color: rgb(145, 145, 164);
+    text-transform: uppercase; /* kapital letters or logo*/
+    font-weight: 700;
+    font-size: 1.8em; /*set relative size till mobile*/
+    }
+
+
+
+.nav a{
+    color:rgb(143, 143, 158);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+
+}
+
+.nav a:hover{
+    color: #601cfc;
+}
+section{
+    padding: 100px ;
+}
+.main{
+    padding: 300px 200px;
+    width: 100%;
+    min-height: 100vh; /*view port to full att the part*/
+    display: flex;
+    align-items: center;
+    background: url(images/background.jpg);
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main h2{
+    color:#ffff;
+    font-size: 1.4em;
+    font-weight: 500;
+
+}
+
+.main h2 span{
+    display: inline-block;
+    margin-top: 10px;
+    color: #fafcfc;
+    font-size: 3em;
+    font-weight: 600;
+}
+.main h3{
+    color: #ffff;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+/*i want to make blue buttom  */
+.main-btn{
+    color: #ffff;
+    background-color: #3a6cf4;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 1 ease;
+}
+.main-btn:hover{
+    background-color: #32269b;
+    transform: scale(1.1 , 1.1);
+}
+.social-icon a{
+    color: #3160c4;
+    font-size: 2em;
+    padding-right: 30px;
+
+}
+
+
+/*   Meny style as cards ---------------------------------------*/
+.title{
+    display: flex;
+    justify-content: center;
+    color:#3a6cf4;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: #ffff;
+    width: 20.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1/ 50%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+}
+.card:hover{
+transform: scale(1.1);
+}
+.icon{
+    font-size: 8em;
+    text-align: center;
+}
+.icon img{
+    height: 20vh;
+}
+
+/*design the contakt*/
+.contact .icon{
+    font-size: 2.5em;
+}
+.contact .info h3{
+    color: rgb(62, 76, 228);
+}
+.contact .info p{
+    font-size: 1.5em;
+   
+}
+
+.row {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.col {position: relative;
+min-height: 1px;
+padding-left: 15px;
+padding-right: 1px;
+margin-bottom: 30px;
+}
+
+
+/*footer*/
+
+.footer {
+    background-color: #000016;
+    color: #fff;
+    padding: 2em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-title {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.footer-title span {
+    color: #3a6cf4;
+
+}
+
+.footer .social-icon {
+    font-size: 1.3em;
+    padding: 0 12px 0 0;
+}
+
