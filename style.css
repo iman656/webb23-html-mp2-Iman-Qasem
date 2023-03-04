@@ -124,6 +124,8 @@ section{
 /*  Bok Bord , grid */
 
 .wrapper {
+    display: grid;
+    grid-template-columns: 300px 600px ; /*2 column 1/2*/
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2); /*litle shadow value and color black*/
   }
   .wrapper > * {
@@ -135,31 +137,32 @@ section{
     padding: 0;
   }
   
-  .contacts {
-    background: #4b5195; 
-    color: #fff;
+  .contacts { /*-----1'st column--*/
+    background: #4b5195;     /*first column background in light-blue*/ 
+    color: #fff;             /*white text*/
   }
   
-  .form {
-    background: #fff;
+  .form {  /*-----2'nd column--*/
+    background: #fff;     /*background all elemnts (forms)in 2'nd column 
+                                 are white*/
   }
   
-  form label {
-    display: block;
+  form label {   
+    display: block;  /*text labels are block*/
   }
   
   button,
   input,
   textarea {
-    padding: 1em;
+    padding: 1em; 
   }
   
   button {
-    background: lightgrey;
-    width: 100%;
+    background: lightgrey; /*skicka button is white*/
+    width: 100%;              /*is fulling the 2'nd column*/
     border: 0;
   }
-  button:hover, button:focus {
+  button:hover, button:focus {  /*change till gold color when click*/
     background: gold;
     outline: 0;
   }
