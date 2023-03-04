@@ -236,16 +236,19 @@ transform: scale(1.1);
     font-size: 2.5em;
 }
 .contact .info h3{
-    color: rgb(62, 76, 228); /*contact telphon and address color blue-shine*/
+    color: rgb(62, 76, 228); /*contact telphon and address color blue-shine value rgb*/
+}
+.contact .info a{
+    text-decoration: none; 
+    color: rgb(62, 76, 228);
 }
 
-.row {   /*area around text contact information*/
+.row {   /*area around text */
     margin-left: 15px;
     margin-right: 15px;
 }
 .col {  
-position: relative;  /*contact informations text is relative*/
-min-height: 1px;
+position: relative;  
 padding-left: 15px;
 padding-right: 1px;
 margin-bottom: 30px;
@@ -273,6 +276,10 @@ footer{
 .box{  /*each column inside text color white and center*/
     text-align: center; 
     color: #fafcfc;  
+}
+.box a{
+    color: #fafcfc; 
+    text-decoration: none;
 }
 
 
