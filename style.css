@@ -55,65 +55,65 @@ header{
 
 /**************Startsidan ***************************************************/
 section{
-    padding: 100px ;/*space around all over start-page around in 100px*/
+    padding: 200px ;/*space around all over start-page around in 100px*/
 }
 .main{  
-    padding: 300px 200px; /**/
+    
     width: 100%;    /*take all width inside section*/
-    min-height: 100vh; /*view port to full att the part*/
-    display: flex;
-    align-items: center;
-    background: url(images/background.jpg);
-    background-size: cover; 
-    background-position: center;
-    background-attachment: fixed;
+    min-height: 100vh; /* min 100 view port hight to full all the part*/
+    display: flex;  /*flex */
+    align-items: center; /*elents center*/
+    background: url(images/background.jpg); /*background full from folder images
+                                                no repeat*/
+    background-size: cover; /*fix picture background to full coorect size*/
+    background-position: center; /*background picture be in the center of section*/
+    background-attachment: fixed;/*backround will not move with scrool*/
 }
 
-.main h2{
-    color:#ffff;
-    font-size: 1.4em;
+.main h2{  /* information text style first line */
+    color:#ffff;  /*color text whiet*/
+    font-size: 1.4em; /*text size small 1.4em +thick 500*/
     font-weight: 500;
-
 }
 
-.main h2 span{
-    display: inline-block;
-    margin-top: 10px;
-    color: #fafcfc;
-    font-size: 3em;
+.main h2 span{   /*style the title special */
+    display: inline-block;/*change from inline-element till inline-blok to set spaces*/
+    margin-top: 10px; /*space 10px between h2 first line and title (spane: Amo resturant)*/
+    color: #fafcfc; /*white text*/
+    font-size: 3em; /*thicker text 3em*/
     font-weight: 600;
 }
-.main h3{
-    color: #ffff;
+.main h3{  /*third line information h3*/
+    color: #ffff; /*white color text*/
     font-size: 2em;
     font-weight: 700;
-    letter-spacing: 1px;
-    margin-top: 10px;
-    margin-bottom: 30px;
+    letter-spacing: 1px; /*space between letters in the text for nice shape*/
+    margin-top: 10px; /*space from upp text 10px*/
+    margin-bottom: 30px;/* to push down space 30px to the button */
 }
-/*i want to make blue buttom  */
+/*i want to make blue button for meny page  */
 .main-btn{
-    color: #ffff;
-    background-color: #3a6cf4;
-    text-decoration: none;
+    color: #ffff; /*text color white in button*/
+    background-color: #3a6cf4; /*button cocor blue*/
+    text-decoration: none; /*text size inside button*/
     font-size: 1.1em;
     font-weight: 600;
-    display: inline-block;
-    padding: 0.9375em;
+    display: inline-block; /*change till inline-block to set margin and padding till button*/
+    padding: 0.9375em; /*space around in em for relative side*/
     letter-spacing: 1px;
-    border-radius: 15px;
-    margin-bottom: 40px;
-    transition: 1 ease;
+    border-radius: 15px;    /*curve in 15px small*/
+    margin-bottom: 40px;    /*space down*/
+    transition: 1 ease;     /*transition slow 1 second duration*/
 }
-.main-btn:hover{
-    background-color: #32269b;
-    transform: scale(1.1 , 1.1);
+.main-btn:hover{ /*to change bigger and change color when click or point mouse*/
+    background-color: #32269b;/*to shine-blue button*/
+    transform: scale(1.1 , 1.1);/*bigger 10% on button size x+y */
 }
 .social-icon a{
-    color: #3160c4;
+    color: #3160c4; /*icons color blue*/
     font-size: 2.1em;
-    padding-right: 30px;
-    padding-left: 10px;
+    padding-right: 30px;  /*push the next icon in 30px*/
+    padding-left: 10px;   /*space in left*/
     
 
 }
