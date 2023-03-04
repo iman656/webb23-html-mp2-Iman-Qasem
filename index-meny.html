@@ -13,90 +13,102 @@
 </head>
 <body>
 
-    <header> 
-        <div><img class="logo1" src="images/icon-cheff.jpg" alt="icon-cheff"></div><!--logo icon--> 
-        <a href="index.html" class="logo">Amo Resturant</a>
-       <!--navigation bar--> 
-        <nav class="nav"> 
-            <a href="index-meny.html">Meny</a>
-            <a href="index-kontakt.html">Kontakt</a>
-            <a href="index-boking.html">Bokning</a>
-        </nav>
-
-    </header>
-
-     <!--the meny cards as flex boxes---------------------------> 
-     <section class="cards" id="services">
-        <h2 class="title">Meny</h2>
-        <div class="content">
-            <div class="card">
-                <div class="icon"> <!--the picture or icon for the menys sort-->
-                    <img src="images/flafel.jpg" alt="flafel" >
-                </div>
-
-                    <div class="info">    <!--sort info inside the card box include the title for the sort-->
-                        <h3> Amos Sandwich Falafel</h3> 
-                         <p>Falafelwrap med hummus, yogurtsås,
-                         färska tomater, mynta, persilja,
-                          sallad och pickles</p><br>
-                          <p>80 SEK</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="icon"> <!--the picture or icon for the menys sort-->
-                    <img src="images/ful.jpg" alt="ful">
-                </div>
-
-                    <div class="info">    <!--sort info inside the card box include the title for the sort-->
-                        <h3> Foul Bel-Laban</h3> 
-                         <p>Favobönor med yogurtsås, tahini, vitlök, färskpressad citron samt dekrerad med persilja, tomater och olivolja.
-                            Tillkommer med sesam bröd och grönsaker.</p><br>
-                            <p>95 SEK</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="icon"> <!--the picture or icon for the menys sort-->
-                    <img src="images/ful-bel-ziet.jpg" alt="ful-bel-ziet">
-                </div>
-
-                    <div class="info">    <!--sort info inside the card box include the title for the sort-->
-                        <h3> Foul Bel-Zeit</h3> 
-                         <p>Falafelwrap med hummus, yogurtsås,
-                         färska tomater, mynta, persilja,
-                          sallad och pickles</p><br>
-                          <p>95 SEK</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="icon"> <!--the picture or icon for the menys sort-->
-                    <img src="images/KC_Fatteh-with-Hummus.jpg" alt="KC_Fatteh-with-Hummus" >
-                </div>
-
-                    <div class="info">    <!--sort info inside the card box include the title for the sort-->
-                        <h3> Hummus Bel-Laban</h3> 
-                         <p>Varma kikärtor med yogurtsås, tahini, vitlök, färskpressad citron samt dekorerad med persilja, tomater och äkta olivolja.
-                            Tillkommer med sesam bröd och grönsaker</p><br>
-                            <p>95 SEK</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="icon"> <!--the picture or icon for the menys sort-->
-                    <img src="images/Hummus-Bizeit-28.jpg" alt="Hummus-Bizeit-28" >
-                </div>
-
-                    <div class="info">    <!--sort info inside the card box include the title for the sort-->
-                        <h3> Hummus Bel-Zeit</h3> 
-                         <p>Varma kikärtor, vitlök, färskpressad citron samt dekorerad med persilja, tomater och äkta olivolja.
-                            Tillkommer med sesam bröd och grönsaker.</p><br>
-                            <p>95 SEK</p>
-                </div>
-            </div>
-            
-         </div>
+   <!-------------- header (Flex box) has logo + logo-text=name resturant + Nav bar -->
+   <header> 
        
+    <div><img class="logo" src="images/icon-cheff.jpg" alt="icon-cheff"></div><!--logo icon-->
+    <a class="logo-text" href="index.html">Amo Resturant</a> <!--resturant Name-->
+     
+   <!--navigation bar--> 
+    <nav class="nav"> 
+        <a href="index-meny.html">Meny</a>
+        <a href="index-kontakt.html">Kontakt</a>
+        <a href="index-boking.html">Bokning</a>
+    </nav>
+
+</header>
 
 
-    </section>
+
+   <!-----------the meny cards as flex boxes---------------------------------------> 
+   <section class="cards" id="services">  
+    <h2 class="title">Meny</h2>  <!--class title for Meny--> 
+    <div class="content">  <!--class content for boxes style as row flex boxex-->
+        <div class="card">  <!--design each card for sorts-->
+            <div class="icon"> <!-- picture for the sort-->
+                <img src="images/flafel.jpg" alt="flafel" >
+            </div>
+
+                <div class="info">    <!--sort info inside the card box include the title for the sort-->
+                    <h3> Amos Sandwich Falafel</h3> 
+                     <p>Falafelwrap med hummus, yogurtsås, <!--sorts discription-->
+                     färska tomater, mynta, persilja,
+                      sallad och pickles</p>
+                      <br>
+                        <p>80 SEK</p> <!--sorts price-->
+            </div>
+        </div>
+        <!-------repeate card in diffrent sort information------->
+        <div class="card">  
+            <div class="icon"> 
+                <img src="images/ful.jpg" alt="ful">
+            </div>
+
+                <div class="info">    
+                    <h3> Foul Bel-Laban</h3> 
+                     <p>Favobönor med yogurtsås, tahini, vitlök, färskpressad citron samt dekrerad med persilja, tomater och olivolja.
+                        Tillkommer med sesam bröd och grönsaker.</p>
+                        <br>
+                        <p>95 SEK</p>
+            </div>
+        </div>
+        <!-------repeate card in diffrent sort information------->
+        <div class="card">
+            <div class="icon"> 
+                <img src="images/ful-bel-ziet.jpg" alt="ful-bel-ziet">
+            </div>
+
+                <div class="info">   
+                    <h3> Foul Bel-Zeit</h3> 
+                     <p>Falafelwrap med hummus, yogurtsås,
+                     färska tomater, mynta, persilja,
+                      sallad och pickles</p><br>
+                      <p>95 SEK</p>
+            </div>
+        </div>
+        <!-------repeate card in diffrent sort information------->
+        <div class="card">
+            <div class="icon">
+                <img src="images/KC_Fatteh-with-Hummus.jpg" alt="KC_Fatteh-with-Hummus" >
+            </div>
+
+                <div class="info">   
+                    <h3> Hummus Bel-Laban</h3> 
+                     <p>Varma kikärtor med yogurtsås, tahini, vitlök, färskpressad citron samt dekorerad med persilja, tomater och äkta olivolja.
+                        Tillkommer med sesam bröd och grönsaker</p><br>
+                        <p>95 SEK</p>
+            </div>
+        </div>
+        <!-------repeate card in diffrent sort information------->
+        <div class="card">
+            <div class="icon"> 
+                <img src="images/Hummus-Bizeit-28.jpg" alt="Hummus-Bizeit-28" >
+            </div>
+
+                <div class="info">   
+                    <h3> Hummus Bel-Zeit</h3> 
+                
+                     <p>Varma kikärtor, vitlök, färskpressad citron samt dekorerad med persilja, tomater och äkta olivolja.
+                        Tillkommer med sesam bröd och grönsaker.</p><br>
+                        <p>95 SEK</p>
+            </div>
+        </div>
+        
+     </div>
+   
+</section>
+
+
 
    <!-----Footer is grid , 4 columns, column 1+ 4 used for adress+ socialmedia ---------------->
 <footer>

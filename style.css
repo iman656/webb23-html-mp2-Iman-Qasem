@@ -92,31 +92,34 @@ section{
     margin-bottom: 30px;/* to push down space 30px to the button */
 }
 /*i want to make blue button for meny page  */
-.main-btn{
+.main-btn, .main-btn-bok{
     color: #ffff; /*text color white in button*/
-    background-color: #3a6cf4; /*button cocor blue*/
+    background-color: #3a6cf4; /*button color blue*/
     text-decoration: none; /*text size inside button*/
     font-size: 1.1em;
     font-weight: 600;
     display: inline-block; /*change till inline-block to set margin and padding till button*/
-    padding: 0.9375em; /*space around in em for relative side*/
+    padding: 1em; /*space around in em for relative side*/
     letter-spacing: 1px;
     border-radius: 15px;    /*curve in 15px small*/
     margin-bottom: 40px;    /*space down*/
     transition: 1 ease;     /*transition slow 1 second duration*/
 }
-.main-btn:hover{ /*to change bigger and change color when click or point mouse*/
-    background-color: #32269b;/*to shine-blue button*/
+.main-btn:hover, .main-btn-bok:hover{ /*to change bigger and change color when click or point mouse*/
+    background-color: #32269b;/*to dark-blue button*/
     transform: scale(1.1 , 1.1);/*bigger 10% on button size x+y */
 }
 .social-icon a{
     color: #3160c4; /*icons color blue*/
     font-size: 2.1em;
     padding-right: 30px;  /*push the next icon in 30px*/
-    padding-left: 10px;   /*space in left*/
-    
-
+    padding-left: 18px;   /*space in left*/
+   
 }
+.main-btn-bok{ /*button boka place in the middle*/
+    margin-left: 50%;
+}
+/***************************************************************************/
 
 /*  Bok Bord , grid */
 
@@ -195,37 +198,37 @@ section{
   }
 
 
-/*   Meny style as cards ---------------------------------------*/
-.title{
+/*****************Meny style - flex boxex as cards**************************/
+.title{   /*title style text */
     display: flex;
     justify-content: center;
-    color:#3a6cf4;
-    font-size: 2.2em;
+    color:#3a6cf4; /* letters are in shine blue*/
+    font-size: 2.2em;  /*text size is 2.2em, nice size */
     font-weight: 800;
-    margin-bottom: 30px;
+    margin-bottom: 30px; /*down space to the cards boxex*/
 }
-.content {
+.content {  /*the flex box all elements(childs or cards) */
     display: flex;
     justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: row;  /*row cards*/
+    flex-wrap: wrap;  /*bush cards down for small screen*/
 }
-.card{
-    background-color: #ffff;
+.card{  /*each card design */
+    background-color: #ffff; /*each card is white backgroung*/
     width: 20.25em;
-    box-shadow: 0 5px 25px rgba(1 1 1/ 50%);
+    box-shadow: 0 5px 25px rgba(1 1 1/ 50%); /*shadow behaind each card*/
     border-radius: 10px;
     padding: 25px;
     margin: 15px;
 }
-.card:hover{
+.card:hover{  /*hover for each card to be bigger */
 transform: scale(1.1);
 }
 .icon{
     font-size: 8em;
     text-align: center;
 }
-.icon img{
+.icon img{  /*each card picture size*/
     height: 20vh;
 }
 
