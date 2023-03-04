@@ -63,9 +63,8 @@ section{
     min-height: 146vh; /* min 100 view port hight to full all the part*/
     display: flex;  /*flex */
     align-items: center; /*elents center*/
-    background: url(images/background.jpg); /*background full from folder images
-                                                no repeat*/
-    background-size: cover; /*fix picture background to full coorect size*/
+    background: url(images/background.jpg); /*background full */
+    background-size: cover;    /*fix picture background to full corect size*/
     background-position: center; /*background picture be in the center of section*/
     background-attachment: fixed;/*backround will not move with scrool*/
 }
@@ -232,7 +231,7 @@ transform: scale(1.1);
     height: 20vh;
 }
 /**************************************************************/
-/*design the contakt*/
+/*design the contact*/
 .contact .icon{
     font-size: 2.5em;
 }
@@ -254,20 +253,20 @@ margin-bottom: 30px;
 
 
 /*****************footer , black background with white text coclor, 
-the address& telephon+ socialmedia are GRID in class container,
+******* GRID *****
  element inside grid box container*/
 
 footer{
-    background-color: #010118;  /* specific black background*/
-    padding-top: 20px;            /*space from top inside footer*/
+    background-color: #010118;  /* specific black value*/
+    padding-top: 20px;            /*top space inside footer 20px value*/
 }
 .container {
-    background-color: #010118;
+    background-color: #010118;   /*black value same in footer*/
     padding-top: 20px;
     display: grid;               /*Grid*/
     grid-template-columns: 33% 33% 33%;  /*3 columns equall erea*/
-    grid-auto-rows: minmax(200px,auto) ;  /*text inside each row is auto*/
-    gap: 30px;   /*space */
+    grid-auto-rows: minmax(200px,auto) ;  /*text in each row*/
+    gap: 30px;   /*space 30px*/
 
 }
 
@@ -277,17 +276,22 @@ footer{
 }
 
 
-/* ***************media Quiries************  */
+/* ***************media view in mobile ************  */
 @media (max-width:1023px){  /*condition if the screen size less till 1023px*/
     header{  /*normal padding 10px 200px,, here less header padding*/
         padding: 5px 10px;
     }
+    .logo{
+        width: 0;
+    }
     .nav a{  
-        padding-left: 10px; /* less left padding in nav bar*/
+        padding-left: 10px; /* less left padding 10px*/
+        padding-right: 3px;
     }
     .meny{
         padding-top: 200px; /*bush down*/
     }
+    
     .title h2{   /*Meny page-- less font fot title*/
         font-size: 1.3em;
         padding-top: 100px;

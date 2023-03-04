@@ -49,24 +49,24 @@
                 <h3>Din bokningsinformation</h3>
                 <form action="">
                   <p>
-                    <label for=""> name</label>
-                    <input type="text">
+                    <label for="fname"> Name</label>
+                    <input type="text" id="fname" placeholder="Din Namn">
                   </p>
                   <p>
-                    <label for="">Telefon</label>
-                    <input type="text">
+                    <label for="telefon">Telefon</label>
+                    <input type="number" id="telefon" placeholder="Telefon number">
                   </p>
                   <p>
-                    <label for="">Välja dag</label>
-                    <input type="text">
+                    <label for="date">Välja dag</label>
+                    <input type="date" id="date" placeholder="Dag">
                   </p>
                   <p>
-                    <label for="">Vilket tid</label>
-                    <input type="text">
+                    <label for="tid">Vilket tid</label>
+                    <input type="time" id="tid" placeholder="Tid">
                   </p>
                   <p>
-                    <label for="">Överig önskning</label>
-                    <textarea name="" id="" cols="30" rows="7"></textarea>
+                    <label for="subject">Överig önskning</label>
+                    <textarea name="subject" id="subject" cols="30" rows="7" placeholder="Överiga"></textarea>
                   </p>
                   <p>
                     <button>Skicka</button> <!--css class hover to change the color till gold-->
@@ -81,7 +81,7 @@
 
 <!----------------Footer is grid,------ 3 columns, adress+telefon+socialmedia -------->
 <footer>
-  <div class="container"> <!--divided till 3 grid column in class container-->
+  <div class="container">            <!-- 3 grid column in class container-->
       <div class="box box1"> <h3>Address</h3> <!--first column--address----->
           <div>  
               <p> <address>
