@@ -14,49 +14,52 @@
 header{  
    
     height: 150px;
-    background-color: rgb(238, 242, 243); /* color for header background*/
+    background-color: rgb(238, 242, 243); /* color for header background light-blue*/
     width: 100%; 
-    position: fixed;  /*------ i set fixed heder by fixed + z-index 999*/
+    position: fixed;  /*------ i set fixed box heder, fixed + z-index 999*/
     z-index: 999;
     display: flex;    /*--------to set flex header*/
-    justify-content: space-between; /*to aplay spaces between headers childs elements (nav+logo)*/
-    align-items: center;  
-    padding: 10px 200px ;
+    justify-content: space-between; /*applay spaces between headers childs elements
+                                         (nav+logo+logo-text)*/
+    align-items: center;  /* center virticly*/
+    padding: 10px 200px ; /*space around elemnts(child:logo+logo-text+nav): 
+                           upp+buttom= 10px, right+left=200px*/
 }
 
-.logo {
-    text-decoration: none;
-    color: rgb(75, 107, 120); /* color for text name of resturant */
-    text-transform: uppercase; /* kapital letters or logo*/
-    font-weight: 700;
-    font-size: 1.8em; /*set relative size till mobile*/
+.logo-text {
+    text-decoration: none; /*without line under*/
+    color: rgb(75, 107, 120); /*color for text logo-text gray-blue*/
+    text-transform: uppercase; /* kapital letters or logo-text*/
+    font-weight: 700; /*thick of letters 700*/
+    font-size: 1.8em; /* relative size till mobile by 1em=16px*/
     }
-.logo1 {
+.logo {
     
     width: 80px;
     height: 80px;
     opacity: 0.3;
 }
 
-.nav a{    /*design Nav bar: color and size*/
-    color:rgb(75, 107, 120);  /* color text Nav bar same of Logo color*/
+.nav a{    /*design Nav bar*/
+    color:rgb(75, 107, 120);  /* color text Nav bar same Logo color 
+                                 gray-blue*/
     text-decoration: none;  /*nav without line under*/
-    font-size: 1.1em;
-    font-weight: 500;
-    padding-left: 30px;
+    font-size: 1.1em;  /*text size 1.1em*/
+    font-weight: 500; /*font thich less than logo-text */
+    padding-left: 30px; /*space between nav elements in 30px */
 
 }
-.nav a:hover{ /*Nav bar:to change color on clik, point or stand on it*/
-    color: #601cfc; /* color blue comes when we point or stand on it*/
+.nav a:hover{ /*Nav bar:change color on clik, point or stand on it*/
+    color: #601cfc; /* color till deep-blue comes when we point or stand on it*/
 }
 
-/****************Main page for information***************************************************/
+/**************Startsidan ***************************************************/
 section{
-    padding: 100px ;
+    padding: 100px ;/*space around all over start-page around in 100px*/
 }
-.main{
-    padding: 300px 200px;
-    width: 100%;
+.main{  
+    padding: 300px 200px; /**/
+    width: 100%;    /*take all width inside section*/
     min-height: 100vh; /*view port to full att the part*/
     display: flex;
     align-items: center;

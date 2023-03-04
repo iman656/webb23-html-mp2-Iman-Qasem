@@ -16,10 +16,10 @@
 </head>
 <body>
 
-    <header>  <!-- header (Flex box) has logo + name resturant + Nav bar -->
+    <header>  <!-- header (Flex box) has logo + logo-text=name resturant + Nav bar -->
        
-        <div><img class="logo1" src="images/icon-cheff.jpg" alt="icon-cheff"></div><!--logo icon-->
-        <a class="logo" href="index.html">Amo Resturant</a> <!--resturant Name-->
+        <div><img class="logo" src="images/icon-cheff.jpg" alt="icon-cheff"></div><!--logo icon-->
+        <a class="logo-text" href="index.html">Amo Resturant</a> <!--resturant Name-->
          
        <!--navigation bar--> 
         <nav class="nav"> 
@@ -30,23 +30,33 @@
     
     </header>
 
-    <!----------Start sidan ------------------------------>
+    <!----------------------------Startsidan ------------------------------>
 
-    <section class="main"> <!--to design the main pic-->
+    <section class="main"> <!--to design the Background picture class=main-->
         <div>
-            <h2>Vällkomna till<br><span>Amo Resturang</span></h2> 
+            <h2>Vällkomna till<br><span>Amo Resturang</span></h2> <!--span to styling AmoResturant alone even inside h2-->
             <h3>Testa våra goda favobönor eller hemlagade <br>
                 hummus tillsammans med god bröd och färska grönsaker.</h3>
-            <a href="index-meny.html" class="main-btn">Visa vårs Meny</a> <!-- for meny buttom --->
-                 <div class="social-icon"> <!--div for social media icons facebook + instra-->
+                                              <!--link till meny page: click:- in class=main btn-->
+            <a href="index-meny.html" class="main-btn">Visa vårs Meny</a> 
+                
+                <div class="social-icon"> <!--div for social media icons facebook + instra from google icon-->
                         <a href="https://www.facebook.com/amorestaurang.se" target="_blank">
                                  <i class="fa-brands fa-facebook"></i></a> 
                                     <!--set instra icon-->
                         <a href="https://www.instagram.com/amorestaurang/" target="blank">
                                 <i class="fa-brands fa-square-instagram"></i></a>
                 </div>
+                <!--link till boking page: click:- -->
+                <a href="index-meny.html" class="main-btn">Visa vårs Meny</a> 
         </div>
+      
     </section>
+
+
+
+
+
 
    <!-----------the meny cards as flex boxes---------------------------> 
     <section class="cards" id="services">
@@ -123,6 +133,10 @@
 
 
     </section>
+
+
+
+
     <!-- kontakt-->
     <section class="cards contact" id="content">
         <h2 class="title">Hitta hitt</h2>
@@ -157,6 +171,12 @@
 
 
     </section>
+
+
+
+
+
+
 <!---------Footer is grid , 4 columns, column 1+ 4 used for adress+ socialmedia -->
   <footer>
         <div class="container">
