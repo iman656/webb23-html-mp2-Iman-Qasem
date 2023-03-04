@@ -10,23 +10,23 @@
 }
 
 
-
-header{
+/*************header************************/
+header{  
    
     height: 150px;
-    background-color: rgb(238, 242, 243);
-    width: 100%;
-    position: fixed; /* i set fixed heder by fixed + z-index 999*/
+    background-color: rgb(238, 242, 243); /* color for header background*/
+    width: 100%; 
+    position: fixed;  /*------ i set fixed heder by fixed + z-index 999*/
     z-index: 999;
-    display: flex; /*to set flex header*/
+    display: flex;    /*--------to set flex header*/
     justify-content: space-between; /*to aplay spaces between headers childs elements (nav+logo)*/
-    align-items: center;
+    align-items: center;  
     padding: 10px 200px ;
 }
 
 .logo {
     text-decoration: none;
-    color: rgb(83, 83, 111);
+    color: rgb(75, 107, 120); /* color for text name of resturant */
     text-transform: uppercase; /* kapital letters or logo*/
     font-weight: 700;
     font-size: 1.8em; /*set relative size till mobile*/
@@ -38,18 +38,19 @@ header{
     opacity: 0.3;
 }
 
-.nav a{
-    color:rgb(143, 143, 158);
-    text-decoration: none;
+.nav a{    /*design Nav bar: color and size*/
+    color:rgb(75, 107, 120);  /* color text Nav bar same of Logo color*/
+    text-decoration: none;  /*nav without line under*/
     font-size: 1.1em;
     font-weight: 500;
     padding-left: 30px;
 
 }
-
-.nav a:hover{
-    color: #601cfc;
+.nav a:hover{ /*Nav bar:to change color on clik, point or stand on it*/
+    color: #601cfc; /* color blue comes when we point or stand on it*/
 }
+
+/****************Main page for information***************************************************/
 section{
     padding: 100px ;
 }
