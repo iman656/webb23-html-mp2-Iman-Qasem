@@ -16,22 +16,22 @@ header{
     height: 150px;
     background-color: rgb(238, 242, 243); /* color for header background light-blue*/
     width: 100%; 
-    position: fixed;  /*------ i set fixed box heder, fixed + z-index 999*/
+    position: fixed;  
     z-index: 999;
-    display: flex;    /*--------to set flex header*/
-    justify-content: space-between; /*applay spaces between headers childs elements
+    display: flex;             
+    justify-content: space-between; /*spaces between headers childs elements
                                          (nav+logo+logo-text)*/
-    align-items: center;  /* center virticly*/
-    padding: 10px 200px ; /*space around elemnts(child:logo+logo-text+nav): 
-                           upp+buttom= 10px, right+left=200px*/
+    align-items: center;          /* center virticly*/
+    padding: 10px 200px ;         /*space around elemnts(child:logo+logo-text+nav): 
+                                    upp+buttom= 10px, right+left=200px*/
 }
 
 .logo-text {
-    text-decoration: none; /*without line under*/
-    color: rgb(75, 107, 120); /*color for text logo-text gray-blue*/
-    text-transform: uppercase; /* kapital letters or logo-text*/
-    font-weight: 700; /*thick of letters 700*/
-    font-size: 1.8em; /* relative size till mobile by 1em=16px*/
+    text-decoration: none;      /*without line under*/
+    color: rgb(75, 107, 120);  /*color for text logo-text gray-blue*/
+    text-transform: uppercase;   /* kapital letters or logo-text*/
+    font-weight: 700;             /*thick of letters 700*/
+    font-size: 1.8em;            /* relative size till mobile by 1em=16px*/
     }
 .logo {
     
@@ -43,15 +43,16 @@ header{
 .nav a{    /*design Nav bar*/
     color:rgb(75, 107, 120);  /* color text Nav bar same Logo color 
                                  gray-blue*/
-    text-decoration: none;  /*nav without line under*/
-    font-size: 1.1em;  /*text size 1.1em*/
-    font-weight: 500; /*font thich less than logo-text */
-    padding-left: 30px; /*space between nav elements in 30px */
+    text-decoration: none;       /*nav without line under*/
+    font-size: 1.1em;            /*text size 1.1em*/
+    font-weight: 500;            /*font thich less than logo-text */
+    padding-left: 30px;          /*space between nav elements in 30px */
 
 }
-.nav a:hover{ /*Nav bar:change color on clik, point or stand on it*/
-    color: #601cfc; /* color till deep-blue comes when we point or stand on it*/
+.nav a:hover{       /*Nav bar:change color on clik, point or stand on it*/
+    color: #601cfc; /* color till deep-blue comes in point or stand */
 }
+
 
 /**************Startsidan ***************************************************/
 section{
@@ -59,46 +60,46 @@ section{
 }
 .main{  
     
-    width: 100%;    /*take all width inside section*/
-    min-height: 146vh; /* min 100 view port hight to full all the part*/
-    display: flex;  /*flex */
-    align-items: center; /*elents center*/
-    background: url(images/background.jpg); /*background full */
-    background-size: cover;    /*fix picture background to full corect size*/
-    background-position: center; /*background picture be in the center of section*/
-    background-attachment: fixed;/*backround will not move with scrool*/
+    width: 100%;            /*take all width inside section*/
+    min-height: 146vh;      /* min 100 view port hight to full all the part*/
+    display: flex;  
+    align-items: center; 
+    background: url(images/background.jpg);     /*background full */
+    background-size: cover;    
+    background-position: center;       
+    background-attachment: fixed;                /*backround will not move with scrool*/
 }
 
-.main h2{  /* information text style first line */
-    color:#ffff;  /*color text whiet*/
+.main h2{             /* information text style first line */
+    color:#ffff;    /*color text whiet*/
     font-size: 1.4em; /*text size small 1.4em +thick 500*/
     font-weight: 500;
 }
 
-.main h2 span{   /*style the title special */
-    display: inline-block;/*change from inline-element till inline-blok to set spaces*/
-    margin-top: 10px; /*space 10px between h2 first line and title (spane: Amo resturant)*/
-    color: #fafcfc; /*white text*/
-    font-size: 3em; /*thicker text 3em*/
+.main h2 span{               /*style the title special */
+    display: inline-block;  /*change from inline-element till inline-blok to set spaces*/
+    margin-top: 10px;     /*space 10px between h2 first line and title (spane: Amo resturant)*/
+    color: #fafcfc;      /*white text*/
+    font-size: 3em;        /*thicker text 3em*/
     font-weight: 600;
 }
 .main h3{  /*third line information h3*/
-    color: #ffff; /*white color text*/
+    color: #ffff;  /*white color text*/
     font-size: 2em;
     font-weight: 700;
     letter-spacing: 1px; /*space between letters in the text for nice shape*/
-    margin-top: 10px; /*space from upp text 10px*/
-    margin-bottom: 30px;/* to push down space 30px to the button */
+    margin-top: 10px;     /*space from upp text 10px*/
+    margin-bottom: 30px;  /* to push down space 30px to the button */
 }
 /*i want to make blue button for meny page  */
 .main-btn, .main-btn-bok{
-    color: #ffff; /*text color white in button*/
+    color: #ffff;               /*text color white in button*/
     background-color: #3a6cf4; /*button color blue*/
-    text-decoration: none; /*text size inside button*/
+    text-decoration: none;         /*text size inside button*/
     font-size: 1.1em;
     font-weight: 600;
-    display: inline-block; /*change till inline-block to set margin and padding till button*/
-    padding: 1em; /*space around in em for relative side*/
+    display: inline-block;   /*change till inline-block to set margin and padding till button*/
+    padding: 1em; /
     letter-spacing: 1px;
     border-radius: 15px;    /*curve in 15px small*/
     margin-bottom: 40px;    /*space down*/
@@ -159,7 +160,7 @@ section{
   }
   
   button {
-    background: lightgrey; /*skicka button is light-grey*/
+    background: lightgrey; /*(skicka) button is light-grey*/
     width: 100%;              /*is fulling the 2'nd column*/
     border: 0;
   }
@@ -206,14 +207,14 @@ section{
     font-weight: 800;
     margin-bottom: 30px; /*down space to the cards boxex*/
 }
-.content {  /*the flex box all elements(childs or cards) */
+.content {      /*flex box all elements(childs or cards) */
     display: flex;
     justify-content: center;
     flex-direction: row;  /*row cards*/
     flex-wrap: wrap;  /*bush cards down for small screen*/
 }
-.card{  /*each card design */
-    background-color: #ffff; /*each card is white backgroung*/
+.card{      /*each card design */
+    background-color: #ffff; /* white backgroung*/
     width: 20.25em;
     box-shadow: 0 5px 25px rgba(1 1 1/ 50%); /*shadow behaind each card*/
     border-radius: 10px;
@@ -230,6 +231,8 @@ transform: scale(1.1);
 .icon img{  /*each card picture size*/
     height: 20vh;
 }
+
+
 /**************************************************************/
 /*design the contact*/
 .contact .icon{
@@ -261,15 +264,15 @@ margin-bottom: 30px;
 
 footer{
     background-color: #010118;  /* specific black value*/
-    padding-top: 20px;            /*top space inside footer 20px value*/
+    padding-top: 20px;            /*top space 20px value*/
 }
 .container {
     background-color: #010118;   /*black value same in footer*/
     padding-top: 20px;
     display: grid;               /*Grid*/
     grid-template-columns: 33% 33% 33%;  /*3 columns equall erea*/
-    grid-auto-rows: minmax(200px,auto) ;  /*text in each row*/
-    gap: 30px;   /*space 30px*/
+    grid-auto-rows: minmax(200px,auto) ;  
+    gap: 30px;                       /*space 30px*/
 
 }
 
@@ -285,21 +288,21 @@ footer{
 
 /* ***************media view in mobile ************  */
 @media (max-width:1023px){  /*condition if the screen size less till 1023px*/
-    header{  /*normal padding 10px 200px,, here less header padding*/
+    header{               /*normal padding 10px 200px,, */
         padding: 5px 10px;
     }
     .logo{
         width: 0;
     }
     .nav a{  
-        padding-left: 10px; /* less left padding 10px*/
+        padding-left: 10px;     /* less left paddingx*/
         padding-right: 3px;
     }
     .meny{
         padding-top: 200px; /*bush down*/
     }
     
-    .title h2{   /*Meny page-- less font fot title*/
+    .title h2{              /*Meny page-- less font title*/
         font-size: 1.3em;
         padding-top: 100px;
     }
@@ -307,9 +310,9 @@ footer{
         padding-top: 100px;
     }
     .icon img{
-        height: 15vh; /*small picture in meny cards, it was 30vh*/
+        height: 15vh; /*small picture in meny cards than 30vh*/
     }
-    section{   /*less sections value*/
+    section{        
         padding: 40px 20px;
     }
     .main-content h2{
@@ -318,15 +321,15 @@ footer{
     .main-content h3 {
         font-size: 1.6em;
     }
-    .content { /*card for meny change to collumn*/
+    .content {    /*card for meny change to collumn*/
         flex-direction: column;
         align-items: center;  /*use align-item brcause it is collumn*/
     }
-    .container { /*less gap between column in footer*/
+    .container {      /*less gap between column in footer*/
         gap: 10px;
     }
 
-    .wrapper{  /***Bk Bord smaller in mobil view*/
+    .wrapper{  /***boka smaller in mobil view*/
         grid-template-columns: 80px 4fr;
         gap: 0;
         
