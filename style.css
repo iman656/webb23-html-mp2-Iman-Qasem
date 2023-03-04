@@ -231,7 +231,7 @@ transform: scale(1.1);
 .icon img{  /*each card picture size*/
     height: 20vh;
 }
-
+/**************************************************************/
 /*design the contakt*/
 .contact .icon{
     font-size: 2.5em;
@@ -256,34 +256,31 @@ margin-bottom: 30px;
 }
 
 
-/*footer , black background with white text coclor, 
+/*****************footer , black background with white text coclor, 
 the address& telephon+ socialmedia are GRID in class container,
- box are element inside grid box container*/
+ element inside grid box container*/
 
 footer{
-    background-color: #010118;
-    padding-top: 20px;
+    background-color: #010118;  /* specific black background*/
+    padding-top: 20px;            /*space from top inside footer*/
 }
 .container {
     background-color: #010118;
     padding-top: 20px;
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-auto-rows: minmax(200px,auto) ;
-    gap: 30px;
-    
-    
+    display: grid;               /*Grid*/
+    grid-template-columns: 33% 33% 33%;  /*3 columns equall erea*/
+    grid-auto-rows: minmax(200px,auto) ;  /*text inside each row is auto*/
+    gap: 30px;   /*space */
 
 }
-/*set spaces between columns*/
-.box{
-    text-align: center;
-    color: #fafcfc;
-   
+
+.box{  /*each column inside text color white and center*/
+    text-align: center; 
+    color: #fafcfc;  
 }
 
 
-
+/* ***************************  */
 @media (max-width:1023px){
     header{
         padding: 10px 15px;
