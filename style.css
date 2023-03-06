@@ -60,14 +60,16 @@ section{
 }
 .main{  
     
-    width: 100%;                       /*take all width inside section*/
-    min-height: 146vh;                 /* min 100 view port hight to full all the part*/
+                         /*take all width inside section*/
+    min-height: 120vh; 
+    max-width: 100%;                /* min 100 view port hight to full all the part*/
     display: flex;  
     align-items: center; 
     background: url(images/background.jpg);     /*background full */
     background-size: cover;    
     background-position: center;       
-    background-attachment: fixed;                /*backround will not move with scrool*/
+    background-attachment: fixed; 
+                   /*backround will not move with scrool*/
 }
 
 .main h2{                     /* information text style first line */
@@ -289,6 +291,11 @@ footer{
 @media (max-width:1023px){             /*condition if the screen size less till 1023px*/
     header{                            /*normal padding 10px 200px,, */
         padding: 5px 10px;
+    }
+    .main{
+        background-size:auto ;
+        background-repeat: no-repeat;
+        background-position-x: left;
     }
     .logo{
         width: 0;
