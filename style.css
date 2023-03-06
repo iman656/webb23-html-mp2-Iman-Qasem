@@ -285,6 +285,26 @@ footer{
     color: #fafcfc; 
     text-decoration: none;
 }
+.box2{
+   transition: 1 ease;
+    letter-spacing: 1px;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+   
+  }
+
+
+  
+  @keyframes example {
+    0%   { font-size: 120%;}
+    25%  {  }
+    50%  { font-size: 150%;}
+    75%  {   }
+    100% {   font-size: 120% }
+   
+  }
+
 
 
 /* ***************media view in mobile ************  */
