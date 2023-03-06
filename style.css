@@ -316,6 +316,7 @@ footer{
         background-size:auto ;
         background-repeat: no-repeat;
         background-position-x: left;
+        padding-bottom: 0;
     }
     .logo{
         width: 0;
@@ -351,9 +352,12 @@ footer{
         flex-direction: column;
         align-items: center;         /*use align-item brcause it is collumn*/
     }
-    .container {                     /*less gap between column in footer*/
+    .container { 
         gap: 10px;
+        font-size: 0.8em;                   /*less gap between column in footer*/
+        
     }
+    
 
     .wrapper{                          /***boka smaller in mobil view*/
         grid-template-columns: 80px 4fr;
