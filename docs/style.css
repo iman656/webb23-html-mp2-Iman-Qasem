@@ -54,6 +54,7 @@ header{
 }
 
 
+
 /**********************Startsidan ***************************************************/
 section{
     padding: 200px ;                  /*space around all over start-page around in 100px*/
@@ -129,7 +130,7 @@ section{
 .wrapper {
     display: grid;
     grid-template-columns: 300px 2fr ;          /*2 column 1size till 2*/
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2); /*litle shadow value and
+    box-shadow: 0 0 5px 0 rgba(171, 123, 123, 0.2); /*litle shadow value and
                                                  color black*/
     gap: 20px;                                  /*space between tow column*/                                          
   }
