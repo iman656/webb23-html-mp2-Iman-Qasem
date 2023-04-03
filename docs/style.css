@@ -56,7 +56,7 @@ header{
     text-decoration: none;                 /*nav without line under*/
     font-size: 1.1em;                      /*text size 1.1em*/
     font-weight: 500;                      /*font thich less than logo-text */
-    padding-left: 30px;                    /*space between nav elements in 30px */
+    padding-left: var(--buttom-padding);                    /*space between nav elements in 30px */
 
 }
 .nav a:hover{                          /*Nav bar:change color on clik, point or stand on it*/
@@ -102,7 +102,7 @@ section{
     font-weight: 700;
     letter-spacing: 1px;               /*space between letters in the text for nice shape*/
     margin-top: var(--top-margin);                  /*space from upp text 10px*/
-    margin-bottom: 30px;               /* to push down space 30px to the button */
+    margin-bottom: var(--buttom-padding);               /* to push down space 30px to the button */
 }
 /***********i want to make blue button for meny page ***** */
 .main-btn, .main-btn-bok{
@@ -125,7 +125,7 @@ section{
 .social-icon a{
     color: #3160c4;                   /*icons color blue*/
     font-size: 2.1em;
-    padding-right: 30px;                /*push the next icon in 30px*/
+    padding-right: var(--buttom-padding);                /*push the next icon in 30px*/
     padding-left: 18px;                 /*space in left*/
    
 }
@@ -265,8 +265,8 @@ transform: scale(1.1);
 .col {  
 position: relative;  
 padding-left: var(--leftContact-padding);
-padding-right: 1px;
-margin-bottom: 30px;
+padding-right: var(--rightContact-padding);
+margin-bottom: var(--buttom-padding);
 }
 
 
