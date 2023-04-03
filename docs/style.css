@@ -10,14 +10,16 @@
 }
 
 :root {
-    --blue-b-color: #601cfc; 
+    --blue-b-color: #601cfc;
+    --logo-color: rgb(75, 107, 120);
+    --header-color:  rgb(238, 242, 243);
 }
 
 /************************header************************/
 header{  
    
     height: 150px;
-    background-color: rgb(238, 242, 243);     /* color for header background light-blue*/
+    background-color: var(--header-color);     /* color for header background light-blue*/
     width: 100%;    
     position: fixed;  
     z-index: 999;
@@ -31,7 +33,7 @@ header{
 
 .logo-text {
     text-decoration: none;                     /*without line under*/
-    color: rgb(75, 107, 120);               /*color for text logo-text gray-blue*/
+    color: var(--logo-color);               /*color for text logo-text gray-blue*/
     text-transform: uppercase;                /* kapital letters or logo-text*/
     font-weight: 700;                         /*thick of letters 700*/
     font-size: 1.8em;                         /* relative size till mobile by 1em=16px*/
@@ -44,7 +46,7 @@ header{
 }
 
 .nav a{                   /*design Nav bar*/
-    color:rgb(75, 107, 120);            /* color text Nav bar same Logo color 
+    color: var(--logo-color);            /* color text Nav bar same Logo color 
                                                gray-blue*/
     text-decoration: none;                 /*nav without line under*/
     font-size: 1.1em;                      /*text size 1.1em*/
