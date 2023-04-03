@@ -13,6 +13,8 @@
     --blue-b-color: #601cfc;
     --logo-color: rgb(75, 107, 120);
     --header-color:  rgb(238, 242, 243);
+    --mainText-color: #ffff;
+    --top-margin: 10px;
 }
 
 /************************header************************/
@@ -79,29 +81,29 @@ section{
 }
 
 .main h2{                     /* information text style first line */
-    color:#ffff;                   /*color text whiet*/
+    color: var(--mainText-color);                   /*color text whiet*/
     font-size: 1.4em;                /*text size small 1.4em +thick 500*/
     font-weight: 500;
 }
 
 .main h2 span{                          /*style the title special */
     display: inline-block;              /*change from inline-element till inline-blok to set spaces*/
-    margin-top: 10px;                   /*space 10px between h2 first line and title (spane: Amo resturant)*/
+    margin-top: var(--top-margin);                   /*space 10px between h2 first line and title (spane: Amo resturant)*/
     color: #fafcfc;                   /*white text*/
     font-size: 3em;                     /*thicker text 3em*/
     font-weight: 600;
 }
 .main h3{               /*third line information h3*/
-    color: #ffff;                     /*white color text*/
+    color: var(--mainText-color);                     /*white color text*/
     font-size: 2em;
     font-weight: 700;
     letter-spacing: 1px;               /*space between letters in the text for nice shape*/
-    margin-top: 10px;                  /*space from upp text 10px*/
+    margin-top: var(--top-margin);                  /*space from upp text 10px*/
     margin-bottom: 30px;               /* to push down space 30px to the button */
 }
 /***********i want to make blue button for meny page ***** */
 .main-btn, .main-btn-bok{
-    color: #ffff;                    /*text color white in button*/
+    color: var(--mainText-color);                    /*text color white in button*/
     background-color: #3a6cf4;       /*button color blue*/
     text-decoration: none;              /*text size inside button*/
     font-size: 1.1em;
