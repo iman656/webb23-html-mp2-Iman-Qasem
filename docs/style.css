@@ -9,6 +9,9 @@
      scroll-behavior: smooth;
 }
 
+:root {
+    --blue-b-color: #601cfc; 
+}
 
 /************************header************************/
 header{  
@@ -50,7 +53,7 @@ header{
 
 }
 .nav a:hover{                          /*Nav bar:change color on clik, point or stand on it*/
-    color: #601cfc;                  /* color till deep-blue comes in point or stand */
+    color: var(--blue-b-color);                  /* color till deep-blue comes in point or stand */
 }
 
 
