@@ -15,6 +15,9 @@
     --header-color:  rgb(238, 242, 243);
     --mainText-color: #ffff;
     --top-margin: 10px;
+    --leftContact-padding: 15px;
+    --rightContact-padding: 1px;
+    --buttom-padding: 30px;
 }
 
 /************************header************************/
@@ -256,12 +259,12 @@ transform: scale(1.1);
 }
 
 .row {                         /*area around text */
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: var(--leftContact-padding);
+    margin-right: var(--leftContact-padding);
 }
 .col {  
 position: relative;  
-padding-left: 15px;
+padding-left: var(--leftContact-padding);
 padding-right: 1px;
 margin-bottom: 30px;
 }
