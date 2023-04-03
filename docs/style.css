@@ -18,6 +18,8 @@
     --leftContact-padding: 15px;
     --rightContact-padding: 1px;
     --buttom-padding: 30px;
+    --header-padding:10px 200px;
+    --headerMobil-padding: 5px 10px;
 }
 
 /************************header************************/
@@ -32,7 +34,7 @@ header{
     justify-content: space-between;            /*spaces between headers childs elements
                                                (nav+logo+logo-text)*/
     align-items: center;                       /* center virticly*/
-    padding: 10px 200px ;                      /*space around elemnts(child:logo+logo-text+nav): 
+    padding: var(--header-padding);                      /*space around elemnts(child:logo+logo-text+nav): 
                                               upp+buttom= 10px, right+left=200px*/
 }
 
@@ -321,7 +323,7 @@ footer{
 /* ***************media view in mobile ************  */
 @media (max-width:1023px){             /*condition if the screen size less till 1023px*/
     header{                            /*normal padding 10px 200px,, */
-        padding: 5px 10px;
+        padding: var(--headerMobil-padding);
     }
     .main{
         background-size:auto ;
